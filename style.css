@@ -1,0 +1,115 @@
+:root {
+    --ColorBackground: #1d1d1d;
+    --ColorFontViolet: #474dff;
+    --ColorInfos: #0d0d0d;
+}
+/* Déclaration de la Font  */
+@font-face {
+    font-family: "inter";
+    src: url(./assets/fonts/Inter_18pt-Regular.ttf);
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--ColorBackground);
+    color: white;
+    font-family: "inter";
+}
+
+/*              GESTION DU <nav>      */
+
+nav {
+    display: flex;
+    margin: 20px;
+}
+h2 {
+    font-size: 1.5rem;
+    margin-left: 20px;
+    width: 50%;
+}
+ul {
+    display: flex;
+    list-style: none;
+    width: 50%;
+    padding: 5px 0;
+    justify-content: space-between;
+}
+
+/*              GESTION DU <header>        */
+
+.header {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin: 40px 20px;
+    justify-content: center;
+}
+.header-left {
+    display: flex;
+}
+.header-left-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.header-left-container h1 {
+    font-size: 4rem;
+}
+.header-left-container h3 {
+    font-size: 1.5rem;
+    margin-top: 15px;
+    color: var(--ColorFontViolet);
+}
+.header-left-container p {
+    font-size: 0.7rem;
+    margin-top: 10px;
+}
+.header-right img {
+    width: 100%;
+}
+
+/*          GESTION DE LA ZONE INFO         */
+
+.infos {
+    display: grid;
+    padding: 10px;
+    background-color: var(--ColorInfos);
+    grid-template-columns: 40% 60%;
+}
+h3 {
+    font-size: 1rem;
+}
+
+/* PARTIE GAUCHE */
+.infos-left {
+    margin-left: 40px;
+}
+
+.btn-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+.btn-container button {
+    color: white;
+    background: var(--ColorFontViolet);
+    width: 35%;
+    height: 30px;
+    border-radius: 10px;
+    margin: 3px;
+}
+
+/* PARTIE DROITE */
+
+.img-container {
+    display: flex;
+    margin-top: 8px;
+    height: 100px;
+    justify-content: space-around;
+    align-items: center;
+}
+.img-container img {
+    width: 10%;
+}
